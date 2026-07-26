@@ -4,187 +4,429 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="description" content="Vishnu Maddheshiya — Frontend developer, learner, and creator building polished digital experiences.">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Vishnu Maddheshiya - Portfolio</title>
+    <title>Vishnu Maddheshiya — Portfolio</title>
 </head>
 
 <body>
-    
-    <!-- HEADER SECTION -->
-
     <header class="header">
         <a href="#home" class="logo">Vishnu Maddheshiya</a>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class='bx bx-menu' id="menu-icon" aria-label="Open menu"></i>
 
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#skills">My Skills</a>
-            <a href="#services">Services</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
         </nav>
+
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme">
+            <i class='bx bx-moon'></i>
+        </button>
     </header>
 
-    <!-- Home Section -->
-
-    <section id="home" class="home">
-        <div class="home-img">
-            <img src="Profile.jpeg" alt="Profile Image">
-        </div>
-        <div class="home-content">
-            <h3>Hello, Myself</h3>
-            <h1>Vishnu Maddheshiya</h1>
-            <h3>And I'm a <span class="multiple-text"> Learner </span></h3>
-            <p>A passionate Frontend Developer and tech enthusiast, exploring the realms of programming, data science,
-                and emerging technologies like Generative AI.</p>
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/vishnumaddheshiya" target="_blank"><i
-                        class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/vishnumaddheshiya" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://www.facebook.com/professionalvishnu" target="_blank"><i
-                        class='bx bxl-facebook'></i></a>
-                <a href="https://www.instagram.com/vishnu_maddheshiya6258" target="_blank"><i
-                        class='bx bxl-instagram'></i></a>
-                <a href="https://youtube.com/@visionlearningpath" target="_blank"><i class='bx bxl-youtube'></i></a>
-            </div>
-            <a href="Resume.pdf" class="btn"> Resume </a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-
-    <section id="about" class="about">
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>I'm a <span>Frontend Developer</span></h3>
-            <p>Hi, I’m Vishnu Maddheshiya, a B.Tech CSE student from Techno Main Salt Lake. I am passionate about
-                solving problems, critical thinking, and taking on leadership roles. As a developer, I enjoy tackling
-                challenging tasks while staying focused and driven. I’m currently learning Java, and I have experience
-                in C, Python, and Content development...!!</p>
-            <a href="#" class="btn">Read more</a>
-        </div>
-        <div class="about-img">
-            <img src="about.jpeg" alt="About Me">
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-
-    <section id="skills" class="skills">
-        <h2 class="heading">My <span> Skills</span></h2>
-        <div class="skills-container">
-            <div class="skill">
-                <h3>HTML</h3>
-                <div class="skill-bar">
-                    <div class="skill-progress html"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <h3>CSS</h3>
-                <div class="skill-bar">
-                    <div class="skill-progress css"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <h3>Python</h3>
-                <div class="skill-bar">
-                    <div class="skill-progress python"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <h3>C</h3>
-                <div class="skill-bar">
-                    <div class="skill-progress c"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <h3>DSA</h3>
-                <div class="skill-bar">
-                    <div class="skill-progress dsa"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <h3>Java</h3>
-                <div class="skill-bar">
-                    <div class="skill-progress java"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <h3>Content Creation</h3>
-                <div class="skill-bar">
-                    <div class="skill-progress content"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-
-    <section id="services" class="services">
-        <h2 class="heading">My <span>Services</span></h2>
-
-        <div class="services-container">
-            <div class="services-box">
-                <i class='bx bx-code'></i>
-                <h3>Web Development</h3>
-                <p>I design and build responsive, visually appealing websites that offer seamless user experiences using
-                    the latest technologies.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-
-            <div class="services-box">
-                <i class='bx bx-palette'></i>
-                <h3>UI/UX Design</h3>
-                <p>I craft user-centered designs and intuitive interfaces that enhance user engagement and satisfaction.
+    <main>
+        <section id="home" class="home">
+            <div class="home-content" data-reveal>
+                <span class="eyebrow">Frontend Developer • Content Creator • Problem Solver</span>
+                <h1>Building modern digital experiences with clarity and craft.</h1>
+                <h3>I’m <span class="multiple-text">Vishnu Maddheshiya</span></h3>
+                <p>
+                    I build responsive web interfaces, lead community initiatives, and create content-driven digital experiences.
+                    My focus spans frontend development, MERN stack growth, communication, and practical problem solving.
                 </p>
-                <a href="#" class="btn">Read More</a>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn">View Work</a>
+                    <a href="Resume.pdf" class="btn btn-outline">Download Resume</a>
+                </div>
+
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/vishnumaddheshiya" target="_blank" rel="noreferrer"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/vishnumaddheshiya" target="_blank" rel="noreferrer"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.facebook.com/vishnumaddheshiya01/" target="_blank" rel="noreferrer"><i class='bx bxl-facebook'></i></a>
+                    <a href="mailto:vishnumaddheshiya94@gmail.com"><i class='bx bx-envelope'></i></a>
+                    <a href="https://youtube.com/@visionlearningpath" target="_blank" rel="noreferrer"><i class='bx bxl-youtube'></i></a>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <strong data-count="6">0+</strong>
+                        <span>Leadership roles</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong data-count="4">0+</strong>
+                        <span>Featured sections</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong data-count="10">0+</strong>
+                        <span>Core skills</span>
+                    </div>
+                </div>
             </div>
 
-            <div class="services-box">
-                <i class='bx bxl-youtube'></i>
-                <h3>Content Creation</h3>
-                <p>I create engaging, informative, and visually appealing content tailored to various audiences and
-                    platforms.</p>
-                <a href="#" class="btn">Read More</a>
+            <div class="home-visual" data-reveal>
+                <div class="hero-card">
+                    <img src="Profile.jpeg" alt="Vishnu Maddheshiya portrait">
+                    <div class="hero-badge">
+                        <i class='bx bx-star'></i>
+                        Available for internships & collaborations
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- form section -->
-
-    <section class="google-form">
-        <div class="container">
-            <h1>We'd Love Your Feedback!</h1>
-            <p>We value your input. Please take a moment to fill out the form below and share your thoughts with us.</p>
-            <p>Your feedback helps us improve and better serve you. Whether it's suggestions, comments, or concerns, we are eager to hear from you. Your responses will remain confidential, and we genuinely appreciate your time.</p>
-            <p>Thank you for being a part of our community. Your insights are incredibly important to us, and we look forward to hearing from you soon!</p>
-            <div class="form-link">
-                <a href="https://forms.gle/DyqYzLmrMkKkHZL6A" target="_blank" class="btn">Fill Out the Form</a>
+        <section id="about" class="about section-alt">
+            <div class="about-img" data-reveal>
+                <img src="about.jpeg" alt="Vishnu Maddheshiya">
             </div>
-        </div>
-    </section>
-    
-    <!-- Footer Section -->
+
+            <div class="about-content" data-reveal>
+                    <h2 class="heading">About <span>Me</span></h2>
+                <p>
+                    I’m Vishnu Maddheshiya, a B.Tech CSE student at Techno Main Salt Lake who enjoys building useful products and improving them one detail at a time.
+                    I like frontend development, clean UI systems, leadership roles, and solving problems with a calm, structured approach.
+                </p>
+
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <i class='bx bx-code-alt'></i>
+                        <h3>Frontend Focus</h3>
+                        <p>Responsive interfaces with attention to structure, polish, and usability.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class='bx bx-brain'></i>
+                        <h3>Growth Mindset</h3>
+                        <p>Learning Java, DSA, MERN stack, and practical problem solving every week.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class='bx bx-microphone'></i>
+                        <h3>Content & Community</h3>
+                        <p>Sharing ideas, supporting communities, and building consistency.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="work">
+            <h2 class="heading center">Experience <span>& Leadership</span></h2>
+            <div class="project-grid">
+                <article class="project-card" data-reveal>
+                    <div class="project-top">
+                        <i class='bx bx-badge-check'></i>
+                        <span>Campus Ambassador</span>
+                    </div>
+                    <h3>Unstop</h3>
+                    <p>Aug 2025 – Present · Adaptation · Interpersonal Communication</p>
+                </article>
+
+                <article class="project-card" data-reveal>
+                    <div class="project-top">
+                        <i class='bx bxl-google'></i>
+                        <span>Google Student Ambassador</span>
+                    </div>
+                    <h3>Google</h3>
+                    <p>Community outreach · Technical advocacy · Collaboration · Event support</p>
+                </article>
+
+                <article class="project-card" data-reveal>
+                    <div class="project-top">
+                        <i class='bx bx-megaphone'></i>
+                        <span>Head of Public Relations</span>
+                    </div>
+                    <h3>Boundless – IITM BS Travel Society</h3>
+                    <p>Aug 2025 – Present · Leading PR initiatives · Adaptation · Publicity · Online PR</p>
+                </article>
+
+                <article class="project-card" data-reveal>
+                    <div class="project-top">
+                        <i class='bx bx-group'></i>
+                        <span>City Coordinator</span>
+                    </div>
+                    <h3>IITM BS Program</h3>
+                    <p>Sep 2024 – Present · Leadership · Management · Social Services</p>
+                </article>
+
+                <article class="project-card" data-reveal>
+                    <div class="project-top">
+                        <i class='bx bx-edit-alt'></i>
+                        <span>Research & Content</span>
+                    </div>
+                    <h3>Veritas Oratory Society</h3>
+                    <p>Oct 2024 – 2025 · Communication · Research · Content Development</p>
+                </article>
+
+                <article class="project-card" data-reveal>
+                    <div class="project-top">
+                        <i class='bx bx-rocket'></i>
+                        <span>Founder & Innovator</span>
+                    </div>
+                    <h3>Vision Learning Path</h3>
+                    <p>Sep 2024 – Present · Building a skill-based learning platform · Leadership · Management</p>
+                </article>
+
+                <article class="project-card" data-reveal>
+                    <div class="project-top">
+                        <i class='bx bx-network-chart'></i>
+                        <span>Management Team Member</span>
+                    </div>
+                    <h3>GDG On-Campus, Techno Main Salt Lake</h3>
+                    <p>Oct 2025 – Present · Leadership · Adaptation · Communication · Management</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="work section-alt">
+            <h2 class="heading center">Selected <span>Projects</span></h2>
+            <div class="project-grid">
+                <article class="project-card" data-reveal>
+                    <div class="project-top">
+                        <i class='bx bx-bed'></i>
+                        <span>WanderLust</span>
+                    </div>
+                    <h3>Accommodation listing platform</h3>
+                    <p>A web-based accommodation listing and booking platform for travelers and hosts with listings, uploads, reviews, and booking management.</p>
+                    <div class="tag-row">
+                        <span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>EJS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/vishnumaddheshiya/wanderlust" target="_blank" rel="noreferrer" class="btn btn-outline">View Code</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-reveal>
+                    <div class="project-top">
+                        <i class='bx bx-cloud'></i>
+                        <span>Weather Dashboard</span>
+                    </div>
+                    <h3>Modern weather dashboard</h3>
+                    <p>A modern weather dashboard built with React, Vite, and Material UI that displays current weather, 5-day forecasts, and air quality using the OpenWeather API.</p>
+                    <div class="tag-row">
+                        <span>React</span><span>Vite</span><span>Material UI</span><span>OpenWeather API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/vishnumaddheshiya/weather-dashboard" target="_blank" rel="noreferrer" class="btn btn-outline">View Code</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-reveal>
+                    <div class="project-top">
+                        <i class='bx bx-layout'></i>
+                        <span>Portfolio Site</span>
+                    </div>
+                    <h3>Responsive personal portfolio</h3>
+                    <p>A modern one-page portfolio with polished sections, responsive navigation, and a resume-first presentation.</p>
+                    <div class="tag-row">
+                        <span>UI/UX</span><span>Responsive</span><span>Branding</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="skills section-alt">
+            <h2 class="heading center">Technical <span>& Soft Skills</span></h2>
+            <div class="skills-layout">
+                <div class="skill-copy" data-reveal>
+                    <p class="section-intro">
+                        A balanced mix of frontend foundations, programming, core CS concepts, and the soft skills I use in leadership and collaborative work.
+                    </p>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-head">
+                                <div class="skill-label"><span class="skill-icon"><i class='bx bx-code-alt'></i></span><span>Language</span></div>
+                                <span>C, Python, Java</span>
+                            </div>
+                            <div class="skill-bar"><span style="width:92%"></span></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head">
+                                <div class="skill-label"><span class="skill-icon"><i class='bx bx-world'></i></span><span>Web</span></div>
+                                <span>HTML, CSS, Bootstrap, Tailwind CSS, JavaScript</span>
+                            </div>
+                            <div class="skill-bar"><span style="width:95%"></span></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head">
+                                <div class="skill-label"><span class="skill-icon"><i class='bx bx-layer'></i></span><span>Full Stack Development</span></div>
+                                <span>MERN Stack</span>
+                            </div>
+                            <div class="skill-bar"><span style="width:78%"></span></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head">
+                                <div class="skill-label"><span class="skill-icon"><i class='bx bx-wrench'></i></span><span>Tools</span></div>
+                                <span>GitHub, VS Code, Git</span>
+                            </div>
+                            <div class="skill-bar"><span style="width:88%"></span></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head">
+                                <div class="skill-label"><span class="skill-icon"><i class='bx bx-chip'></i></span><span>CS Fundamentals</span></div>
+                                <span>DSA, OOP, DBMS, CN, OS</span>
+                            </div>
+                            <div class="skill-bar"><span style="width:82%"></span></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head">
+                                <div class="skill-label"><span class="skill-icon"><i class='bx bx-data'></i></span><span>Databases</span></div>
+                                <span>SQL, MongoDB</span>
+                            </div>
+                            <div class="skill-bar"><span style="width:80%"></span></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head">
+                                <div class="skill-label"><span class="skill-icon"><i class='bx bx-group'></i></span><span>Soft Skills</span></div>
+                                <span>Communication, Problem-Solving, Creativity, Teamwork, Leadership, Adaptability</span>
+                            </div>
+                            <div class="skill-bar"><span style="width:94%"></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tools-grid" data-reveal>
+                    <div class="tool-card tool-card-accent-1">
+                        <i class='bx bx-device-laptop'></i>
+                        <h3>Responsive Design</h3>
+                        <p>Designing modern, accessible, and responsive interfaces that work seamlessly across all devices.</p>
+                    </div>
+                    <div class="tool-card tool-card-accent-2">
+                        <i class='bx bx-pencil'></i>
+                        <h3>Content Development</h3>
+                        <p>Creating clear, engaging, and impactful content for web, social media, and technical platforms.</p>
+                    </div>
+                    <div class="tool-card tool-card-accent-3">
+                        <i class='bx bx-search-alt-2'></i>
+                        <h3>Problem Solving</h3>
+                        <p>Analyzing problems, breaking them down, and building efficient solutions with a logical approach.</p>
+                    </div>
+                    <div class="tool-card tool-card-accent-4">
+                        <i class='bx bx-bulb'></i>
+                        <h3>Leadership</h3>
+                        <p>Leading teams, managing responsibilities, and driving projects to successful completion.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-footer" data-reveal>
+                <div class="skills-footer-item accent-1"><i class='bx bx-trophy'></i><div><strong>Community Contributor</strong><span>Active in campus and community initiatives</span></div></div>
+                <div class="skills-footer-item accent-2"><i class='bx bx-rocket'></i><div><strong>Continuous Learner</strong><span>Always exploring, always growing</span></div></div>
+                <div class="skills-footer-item accent-3"><i class='bx bx-target-lock'></i><div><strong>Goal Oriented</strong><span>Focused on impact & results</span></div></div>
+                <div class="skills-footer-item accent-4"><i class='bx bx-group'></i><div><strong>Team Player</strong><span>Collaborative & adaptable</span></div></div>
+            </div>
+        </section>
+
+        <section id="certifications" class="work">
+            <h2 class="heading center">Certifications <span>& Courses</span></h2>
+            <div class="project-grid">
+                <article class="project-card" data-reveal>
+                    <div class="project-top"><i class='bx bx-certification'></i><span>Microsoft</span></div>
+                    <h3>Foundations of AI and Machine Learning</h3>
+                    <p>Apr 2025</p>
+                </article>
+                <article class="project-card" data-reveal>
+                    <div class="project-top"><i class='bx bx-certification'></i><span>GeeksforGeeks</span></div>
+                    <h3>Problem Solving</h3>
+                    <p>May 2025</p>
+                </article>
+                <article class="project-card" data-reveal>
+                    <div class="project-top"><i class='bx bx-certification'></i><span>IBM</span></div>
+                    <h3>Getting Started with Artificial Intelligence</h3>
+                    <p>Nov 2024</p>
+                </article>
+                <article class="project-card" data-reveal>
+                    <div class="project-top"><i class='bx bx-certification'></i><span>Udemy</span></div>
+                    <h3>The Complete Python Developer</h3>
+                    <p>Mar 2024</p>
+                </article>
+
+                <article class="project-card" data-reveal>
+                    <div class="project-top"><i class='bx bx-certification'></i><span>EduSkills Foundation® · Remote</span></div>
+                    <h3>Google AI-ML Virtual Internship</h3>
+                    <p>Completed a structured, Google-backed virtual internship focused on applied AI/ML workflows and practical ML tooling outside the classroom.</p>
+                </article>
+
+                <article class="project-card" data-reveal>
+                    <div class="project-top"><i class='bx bx-certification'></i><span>AWS Academy</span></div>
+                    <h3>AWS Academy Graduate — Machine Learning Foundations</h3>
+                    <p>Built foundational understanding of machine learning concepts, workflows, and cloud-aligned applied AI practices.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="achievements" class="skills section-alt">
+            <h2 class="heading center">Achievements <span>& Highlights</span></h2>
+            <div class="skills-layout">
+                <div class="skill-copy" data-reveal>
+                    <p class="section-intro">
+                        Consistent growth through leadership, public speaking, content work, and community involvement.
+                    </p>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-head"><span>Leadership</span><span>Campus roles and society responsibilities</span></div>
+                            <div class="skill-bar"><span style="width:90%"></span></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head"><span>Communication</span><span>Public relations, research, and content development</span></div>
+                            <div class="skill-bar"><span style="width:92%"></span></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head"><span>Innovation</span><span>Founder of Vision Learning Path</span></div>
+                            <div class="skill-bar"><span style="width:88%"></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tools-grid" data-reveal>
+                    <div class="tool-card"><i class='bx bx-trophy'></i><span>Community Contributor</span></div>
+                    <div class="tool-card"><i class='bx bx-network-chart'></i><span>Cross-functional Leadership</span></div>
+                    <div class="tool-card"><i class='bx bx-book-open'></i><span>Research & Learning</span></div>
+                    <div class="tool-card"><i class='bx bx-walk'></i><span>Adaptable Team Player</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact-card" data-reveal>
+                <h2 class="heading center">Let’s <span>Connect</span></h2>
+                <p>
+                    If you’re looking for a motivated frontend learner, collaborator, or content-minded developer, I’d love to hear from you.
+                </p>
+                <div class="contact-actions">
+                    <a href="mailto:vishnumaddheshiya94@gmail.com" class="btn">Email Me</a>
+                    <a href="https://www.linkedin.com/in/vishnumaddheshiya" target="_blank" rel="noreferrer" class="btn btn-outline">LinkedIn</a>
+                </div>
+                <div class="contact-info">
+                    <div><i class='bx bx-mail-send'></i><span>vishnumaddheshiya94@gmail.com</span></div>
+                    <div><i class='bx bx-map'></i><span>India</span></div>
+                    <div><i class='bx bx-time-five'></i><span>Open to internships</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="social">
-            <a href="https://www.linkedin.com/in/vishnumaddheshiya" target="_blank"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/vishnumaddheshiya" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://www.facebook.com/professionalvishnu" target="_blank"><i class='bx bxl-facebook'></i></a>
-            <a href="https://www.instagram.com/vishnu_maddheshiya6258" target="_blank"><i
-                    class='bx bxl-instagram'></i></a>
-            <a href="https://youtube.com/@visionlearningpath" target="_blank"><i class='bx bxl-youtube'></i></a>
+            <a href="https://www.linkedin.com/in/vishnumaddheshiya" target="_blank" rel="noreferrer"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/vishnumaddheshiya" target="_blank" rel="noreferrer"><i class='bx bxl-github'></i></a>
+            <a href="https://www.facebook.com/vishnumaddheshiya01/" target="_blank" rel="noreferrer"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/vishnu_maddheshiya6258" target="_blank" rel="noreferrer"><i class='bx bxl-instagram'></i></a>
+            <a href="https://youtube.com/@visionlearningpath" target="_blank" rel="noreferrer"><i class='bx bxl-youtube'></i></a>
         </div>
-        <div class="contact">
-            <p>📧 Gmail: <a href="mailto:vishnumaddheshiya94@gmail.com">vishnumaddheshiya94@gmail.com</a></p>
-        </div>
-
-        <p class="copyright">
-            © Vishnu Maddheshiya - All Rights Reserved
-        </p>
+        <p class="copyright">© Vishnu Maddheshiya — All Rights Reserved</p>
     </footer>
+
+    <button class="scroll-top" id="scroll-top" type="button" aria-label="Scroll to top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </button>
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
